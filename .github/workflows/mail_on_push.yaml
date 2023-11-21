@@ -5,18 +5,15 @@ jobs:
   mail-on-push:
     runs-on: ubuntu-latest
     steps:
-      -name: send mail
+      - name: send mail
         uses: dawidd6/action-send-mail@v3
         with: 
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{sercrets.MAIL_USERNAME}}
-          password: ${{secret.MAIL_PASSWORD}}
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
           subject: HElohehelohelhoe
-          body: Email ${{github.repository}}.
-          Part 2
-          which is owned by ${{github.event.pusher.name}}
-
+          body: Email ${{github.repository}}. which is owned by ${{github.event.pusher.name}}.
           to: jyri.vaitmaa@tthk.ee
           from: Github Actions
   Explore-GitHub-Actions:
