@@ -15,7 +15,8 @@ jobs:
           subject: HElohehelohelhoe
           body: Email ${{github.repository}}.
           which is owned by ${{github.event.pusher.name}}
-          to: yuri.vaitmaa@tthk.ee
+
+          to: jyri.vaitmaa@tthk.ee
           from: Github Actions
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
